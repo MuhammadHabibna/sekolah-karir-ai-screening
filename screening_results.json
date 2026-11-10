@@ -1,0 +1,1897 @@
+{
+  "ADAPTIVE_TEST": {
+    "candidate_id": "CAND-35504548",
+    "candidate_name": "BIMA ADITYA SAPUTRA",
+    "input_file": "CV Bima Aditya Saputra.pdf",
+    "input_source": "file upload/disk via extract_document()",
+    "extraction_backend": "Gemini (ekstraksi file + penilaian dictionary)",
+    "blueprint_role": "AI Engineer Intern - AI & Automation - Sekolah Karir",
+    "candidate_summary": "Bima Aditya Saputra adalah seorang Autonomous AI Architect dan Full-Stack Deep Learning Innovator yang berfokus pada kecerdasan buatan, arsitektur RAG, dan MLOps. Saat ini menempuh pendidikan S1 Manajemen Bisnis di Universitas Mitra Mandiri serta memiliki pengalaman dalam berbagai proyek AI dan pekerjaan lepas digital.",
+    "readiness_score": 42.5,
+    "readiness_breakdown": [
+      {
+        "kriteria": "Relevansi proyek AI/ML terapan",
+        "skor_0_2": 1,
+        "bobot_%": 30,
+        "kontribusi": 15.0,
+        "gap": "Belum ada rincian teknis terkait pembangunan atau integrasi fitur LLM yang nyata pada proyek."
+      },
+      {
+        "kriteria": "Kemampuan programming & tools",
+        "skor_0_2": 1,
+        "bobot_%": 20,
+        "kontribusi": 10.0,
+        "gap": "Klaim keahlian teknis belum didukung oleh bukti penerapan praktis pada proyek atau pengalaman."
+      },
+      {
+        "kriteria": "Verifiabilitas portofolio",
+        "skor_0_2": 0,
+        "bobot_%": 15,
+        "kontribusi": 0.0,
+        "gap": "Tidak ada tautan GitHub, demo, atau portofolio yang dapat diverifikasi."
+      },
+      {
+        "kriteria": "Kedalaman & kejelasan timeline",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Timeline pengalaman dan proyek kurang spesifik dan masih bersifat estimasi atau fleksibel."
+      },
+      {
+        "kriteria": "Dokumentasi & komunikasi tertulis",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Belum ada bukti dokumentasi teknis, kode, atau laporan eksperimen AI yang relevan."
+      },
+      {
+        "kriteria": "Sinyal komitmen & ketersediaan",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Adanya komitmen magang penuh waktu lain pada jam kerja standar berpotensi menimbulkan bentrok waktu."
+      },
+      {
+        "kriteria": "Relevansi latar pendidikan",
+        "skor_0_2": 1,
+        "bobot_%": 5,
+        "kontribusi": 2.5,
+        "gap": "Jurusan pendidikan saat ini berasal dari bidang bisnis, bukan bidang teknologi informasi atau ilmu komputer yang selaras langsung."
+      }
+    ],
+    "evaluations": {
+      "candidate_id": "CAND-35504548",
+      "evaluations": [
+        {
+          "criterion_id": "ai_project",
+          "score": 1,
+          "rationale": "Kandidat mencantumkan keterlibatan dalam proyek startup stealth mode, namun deskripsi bersifat umum tanpa detail konkret mengenai implementasi fitur LLM atau arsitektur teknis yang dibangun.",
+          "evidence_ids": [
+            "ev_proj_1"
+          ],
+          "gap": "Belum ada rincian teknis terkait pembangunan atau integrasi fitur LLM yang nyata pada proyek."
+        },
+        {
+          "criterion_id": "programming",
+          "score": 1,
+          "rationale": "Kandidat mengklaim banyak bahasa dan tools tingkat lanjut, namun tidak ada bukti nyata atau keterkaitan dalam pengalaman atau proyek yang menunjukkan penggunaan bahasa pemrograman atau tools tersebut secara langsung.",
+          "evidence_ids": [
+            "ev_proj_1",
+            "ev_proj_2",
+            "ev_exp_1"
+          ],
+          "gap": "Klaim keahlian teknis belum didukung oleh bukti penerapan praktis pada proyek atau pengalaman."
+        },
+        {
+          "criterion_id": "portfolio",
+          "score": 0,
+          "rationale": "Tautan portofolio dan GitHub tidak disertakan atau berstatus dalam tahap pemeliharaan, sehingga tidak ada tautan atau demo yang dapat diverifikasi.",
+          "evidence_ids": [],
+          "gap": "Tidak ada tautan GitHub, demo, atau portofolio yang dapat diverifikasi."
+        },
+        {
+          "criterion_id": "timeline",
+          "score": 1,
+          "rationale": "Periode pengalaman dan proyek dicantumkan secara umum (seperti 'Tahun 2025 / 2026' atau 'Fleksibel'), sehingga urutan dan durasi pastinya sulit diverifikasi secara akurat.",
+          "evidence_ids": [
+            "ev_proj_1",
+            "ev_proj_2",
+            "ev_exp_1"
+          ],
+          "gap": "Timeline pengalaman dan proyek kurang spesifik dan masih bersifat estimasi atau fleksibel."
+        },
+        {
+          "criterion_id": "documentation",
+          "score": 1,
+          "rationale": "Kandidat menyebutkan pembuatan dokumen laporan pada pengalaman kerja lepas, namun belum ada contoh artefak dokumentasi kode atau hasil eksperimen AI yang dapat ditinjau.",
+          "evidence_ids": [
+            "ev_exp_1"
+          ],
+          "gap": "Belum ada bukti dokumentasi teknis, kode, atau laporan eksperimen AI yang relevan."
+        },
+        {
+          "criterion_id": "commitment",
+          "score": 1,
+          "rationale": "Terdapat sinyal ketersediaan yang fleksibel, namun juga terdapat konflik ketersediaan berupa magang penuh waktu pada jam kerja Senin hingga Jumat yang dapat menghambat alokasi waktu magang di Sekolah Karir.",
+          "evidence_ids": [],
+          "gap": "Adanya komitmen magang penuh waktu lain pada jam kerja standar berpotensi menimbulkan bentrok waktu."
+        },
+        {
+          "criterion_id": "education_rel",
+          "score": 1,
+          "rationale": "Latar belakang pendidikan kandidat adalah S1 Manajemen Bisnis, yang kurang linier dengan bidang teknik atau ilmu komputer, meskipun relevansi institusi tidak dinilai.",
+          "evidence_ids": [],
+          "gap": "Jurusan pendidikan saat ini berasal dari bidang bisnis, bukan bidang teknologi informasi atau ilmu komputer yang selaras langsung."
+        }
+      ]
+    },
+    "confidence": {
+      "score": 91.7,
+      "label": "High",
+      "evr": 100.0,
+      "fc": 66.7,
+      "dl": 100,
+      "fc_detail": {
+        "identitas": true,
+        "pendidikan": true,
+        "daftar_skill": true,
+        "proyek/pengalaman bertimeline jelas": false,
+        "tautan portofolio dapat dibuka": false,
+        "sinyal ketersediaan": true
+      },
+      "caps": []
+    },
+    "recommendation": {
+      "triage_label_non_final": "Low Alignment",
+      "recommended_human_action": "Needs Human Review — bukti pada CV saat ini belum selaras; BUKAN penolakan otomatis.",
+      "decision_owner": "Human recruiter (sistem tidak memutuskan)"
+    },
+    "caveats": [
+      {
+        "code": "UNVERIFIED_BUZZWORD",
+        "severity": "high",
+        "message": "34 skill diklaim, hanya 0 terhubung bukti proyek. Klaim tanpa bukti tidak dinilai sebagai kemampuan."
+      },
+      {
+        "code": "MISSING_TIMELINE",
+        "severity": "medium",
+        "message": "Sebagian periode pengalaman/proyek tidak tercantum atau tidak jelas sehingga durasi tidak dapat dipastikan."
+      },
+      {
+        "code": "PORTFOLIO_UNVERIFIABLE",
+        "severity": "medium",
+        "message": "Tidak ada tautan portofolio yang dapat dibuka untuk verifikasi deliverable."
+      }
+    ],
+    "interview_probes": [
+      "Ceritakan proyek terakhir di mana Anda memakai salah satu skill yang Anda daftar — apa peran, teknologi, dan hasil Anda secara konkret?",
+      "Bisa jelaskan periode dan durasi keterlibatan Anda pada pengalaman/proyek yang tanggalnya belum tercantum?",
+      "Bersediakah Anda membagikan tautan repositori/demo yang dapat kami buka sebelum interview berikutnya?",
+      "Konfirmasi gap kriteria: Tidak ada tautan GitHub, demo, atau portofolio yang dapat diverifikasi.",
+      "Konfirmasi gap kriteria: Belum ada rincian teknis terkait pembangunan atau integrasi fitur LLM yang nyata pada proyek."
+    ],
+    "dictionary": {
+      "schema_version": "1.0.0",
+      "candidate_id": "CAND-35504548",
+      "candidate_summary": "Bima Aditya Saputra adalah seorang Autonomous AI Architect dan Full-Stack Deep Learning Innovator yang berfokus pada kecerdasan buatan, arsitektur RAG, dan MLOps. Saat ini menempuh pendidikan S1 Manajemen Bisnis di Universitas Mitra Mandiri serta memiliki pengalaman dalam berbagai proyek AI dan pekerjaan lepas digital.",
+      "profile": {
+        "full_name": "BIMA ADITYA SAPUTRA",
+        "education_overview": [
+          {
+            "institution": "Universitas Mitra Mandiri (Jakarta)",
+            "degree_major": "S1 Manajemen Bisnis",
+            "period_raw": "Angkatan 2023",
+            "relevant_coursework": [],
+            "mapping_status": "explicit"
+          }
+        ],
+        "availability_signals": [
+          "Fleksibel",
+          "tertarik untuk mencoba mendaftar di Sekolah Karir"
+        ],
+        "availability_conflicts": [
+          "Saat ini juga sedang menjalani magang penuh waktu (full-time) di salah satu agensi kreatif lokal pada jam kerja Senin–Jumat pukul 09.00–17.00 WIB"
+        ],
+        "portfolio_links": [],
+        "secondary_role_signals": [
+          "Full-Stack Deep Learning Innovator",
+          "AI Engineer"
+        ]
+      },
+      "skills_claimed": [
+        "Artificial General Intelligence (AGI)",
+        "Multi-Agent Autonomous LLM Orchestration",
+        "Enterprise RAG Architecture",
+        "Distributed MLOps",
+        "OpenAI GPT-4o",
+        "Gemini Ultra/Flash",
+        "Claude 3.5",
+        "LangChain",
+        "LlamaIndex",
+        "AutoGPT",
+        "CrewAI",
+        "Fine-Tuning LoRA/QLoRA",
+        "Vector Database (Pinecone, Milvus, Weaviate, Qdrant)",
+        "GraphRAG",
+        "Pydantic",
+        "JSON Schema",
+        "Prompt Engineering",
+        "Python",
+        "Rust",
+        "Go",
+        "TypeScript",
+        "FastAPI",
+        "Django",
+        "Node.js",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "AWS SageMaker",
+        "GCP Vertex AI",
+        "PyTorch",
+        "TensorFlow",
+        "CUDA",
+        "Kafka",
+        "Redis"
+      ],
+      "skills_with_evidence": [],
+      "projects": [
+        {
+          "title": "AI Innovation Lead — Proyek Startup Stealth Mode",
+          "organization": "Proyek Startup Stealth Mode",
+          "period_raw": "Tahun 2025 / 2026",
+          "description_summary": "Berperan aktif membantu tim dalam menggagas ide pemanfaatan teknologi kecerdasan buatan dan berpartisipasi dalam diskusi perancangan fitur chatbot pintar.",
+          "tech_stack": [],
+          "evidence_ids": [
+            "ev_proj_1"
+          ],
+          "mapping_status": "explicit"
+        },
+        {
+          "title": "Peserta Seminar & Bootcamp Nasional Generative AI",
+          "organization": null,
+          "period_raw": "Tanggal tidak dicantumkan",
+          "description_summary": "Mengikuti sesi webinar pengenalan tren AI modern dan berkoordinasi dengan kelompok untuk menyusun slide presentasi.",
+          "tech_stack": [],
+          "evidence_ids": [
+            "ev_proj_2"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Freelance Digital Project Contributor",
+          "organization": null,
+          "period_raw": "Fleksibel",
+          "description_summary": "Menyelesaikan berbagai pekerjaan lepas di bidang digital, pembuatan dokumen laporan, dan pengelolaan operasional harian sesuai permintaan klien.",
+          "tech_stack": [],
+          "evidence_ids": [
+            "ev_exp_1"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "certifications": [],
+      "additional_sections": [
+        {
+          "section_title_original": "EXECUTIVE SUMMARY",
+          "guessed_category": "summary",
+          "summary": "Talenta teknologi visioner dengan penguasaan mendalam di bidang AGI, Multi-Agent Autonomous LLM, Enterprise RAG, dan Distributed MLOps."
+        },
+        {
+          "section_title_original": "DAFTAR KEAHLIAN TEKNIS (TECHNICAL STACK)",
+          "guessed_category": "technical_stack",
+          "summary": "Daftar keahlian di bidang LLM & Generative AI serta Software & MLOps."
+        }
+      ],
+      "ambiguous_mappings": [],
+      "unmapped_information": [
+        "GitHub: [Link menyusul saat wawancara]",
+        "Portfolio: sedang dalam tahap maintenance"
+      ],
+      "evidence_index": [
+        {
+          "evidence_id": "ev_proj_1",
+          "source_section": "PENGALAMAN PROYEK & AKTIVITAS",
+          "quote": "Berperan aktif membantu tim dalam menggagas ide pemanfaatan teknologi kecerdasan buatan yang canggih untuk meningkatkan produktivitas pengguna secara signifikan.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_proj_2",
+          "source_section": "PENGALAMAN PROYEK & AKTIVITAS",
+          "quote": "Mengikuti sesi webinar pengenalan tren AI modern, cara kerja Large Language Models secara umum, serta demonstrasi penggunaan aplikasi chat berbasis web.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_exp_1",
+          "source_section": "PENGALAMAN PROYEK & AKTIVITAS",
+          "quote": "Menyelesaikan berbagai pekerjaan lepas di bidang digital, pembuatan dokumen laporan, dan pengelolaan operasional harian sesuai permintaan klien.",
+          "is_quote_verified": true
+        }
+      ],
+      "self_declared_limitations": [],
+      "extraction_notes": {
+        "missing_fields": [],
+        "layout_uncertainty": false,
+        "document_language": "id"
+      }
+    }
+  },
+  "Raka": {
+    "candidate_id": "CAND-B9EB40A3",
+    "candidate_name": "Raka Pratama Wijaya",
+    "input_file": "CV Raka Pratama Wijaya.pdf",
+    "input_source": "file upload/disk via extract_document()",
+    "extraction_backend": "Gemini (ekstraksi file + penilaian dictionary)",
+    "blueprint_role": "AI Engineer Intern - AI & Automation - Sekolah Karir",
+    "candidate_summary": "Raka Pratama Wijaya is an AI Engineer and Backend Developer currently in his final year pursuing a Bachelor's degree in Informatics Engineering at Institut Teknologi Nusantara. He has practical experience in developing LLM-based applications, FastAPI REST APIs, and Pydantic structured output validation through internships and university research projects. He is available for a 3-month remote paid internship with an allocation of 8-10 hours per week.",
+    "readiness_score": 92.5,
+    "readiness_breakdown": [
+      {
+        "kriteria": "Relevansi proyek AI/ML terapan",
+        "skor_0_2": 2,
+        "bobot_%": 30,
+        "kontribusi": 30.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Kemampuan programming & tools",
+        "skor_0_2": 2,
+        "bobot_%": 20,
+        "kontribusi": 20.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Verifiabilitas portofolio",
+        "skor_0_2": 1,
+        "bobot_%": 15,
+        "kontribusi": 7.5,
+        "gap": "Tautan spesifik repositori GitHub untuk proyek AI belum diverifikasi melalui evidence."
+      },
+      {
+        "kriteria": "Kedalaman & kejelasan timeline",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Dokumentasi & komunikasi tertulis",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Sinyal komitmen & ketersediaan",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Relevansi latar pendidikan",
+        "skor_0_2": 2,
+        "bobot_%": 5,
+        "kontribusi": 5.0,
+        "gap": null
+      }
+    ],
+    "evaluations": {
+      "candidate_id": "CAND-B9EB40A3",
+      "evaluations": [
+        {
+          "criterion_id": "ai_project",
+          "score": 2,
+          "rationale": "Kandidat terbukti memiliki pengalaman nyata dalam proyek RAG dan integrasi LLM (Google Gemini & OpenAI) pada pengalaman kerja dan proyek riset kampus.",
+          "evidence_ids": [
+            "EV_EXP_01",
+            "EV_PROJ_01"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "programming",
+          "score": 2,
+          "rationale": "Penguasaan Python, FastAPI, dan Pydantic terbukti digunakan secara langsung dalam pengalaman kerja magang integrasi API.",
+          "evidence_ids": [
+            "EV_EXP_01"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "portfolio",
+          "score": 1,
+          "rationale": "Tautan portofolio dicantumkan dalam profil namun belum ada tautan spesifik repositori proyek yang dirinci dalam evidence index.",
+          "evidence_ids": [],
+          "gap": "Tautan spesifik repositori GitHub untuk proyek AI belum diverifikasi melalui evidence."
+        },
+        {
+          "criterion_id": "timeline",
+          "score": 2,
+          "rationale": "Periode setiap pengalaman dan proyek tertera dengan jelas beserta bulannya sehingga urutan dan durasi dapat dipastikan.",
+          "evidence_ids": [
+            "EV_EXP_01",
+            "EV_PROJ_01",
+            "EV_EXP_02"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "documentation",
+          "score": 2,
+          "rationale": "Kandidat berpengalaman menyusun skrip evaluasi kualitas output sederhana dan mendokumentasikan hasil pengujian endpoint.",
+          "evidence_ids": [
+            "EV_PROJ_01",
+            "EV_EXP_02"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "commitment",
+          "score": 2,
+          "rationale": "Ketersediaan durasi 3 bulan dan alokasi 8-10 jam/minggu dinyatakan secara eksplisit pada ringkasan dan sinyal ketersediaan.",
+          "evidence_ids": [],
+          "gap": null
+        },
+        {
+          "criterion_id": "education_rel",
+          "score": 2,
+          "rationale": "Jurusan S1 Teknik Informatika serta coursework Natural Language Processing sangat relevan dengan peran AI Engineer.",
+          "evidence_ids": [],
+          "gap": null
+        }
+      ]
+    },
+    "confidence": {
+      "score": 100.0,
+      "label": "High",
+      "evr": 100.0,
+      "fc": 100.0,
+      "dl": 100,
+      "fc_detail": {
+        "identitas": true,
+        "pendidikan": true,
+        "daftar_skill": true,
+        "proyek/pengalaman bertimeline jelas": true,
+        "tautan portofolio dapat dibuka": true,
+        "sinyal ketersediaan": true
+      },
+      "caps": []
+    },
+    "recommendation": {
+      "triage_label_non_final": "Strong Fit",
+      "recommended_human_action": "Prioritaskan untuk interview; tetap baca caveats sebelum memutuskan.",
+      "decision_owner": "Human recruiter (sistem tidak memutuskan)"
+    },
+    "caveats": [
+      {
+        "code": "UNVERIFIED_BUZZWORD",
+        "severity": "high",
+        "message": "13 skill diklaim, hanya 3 terhubung bukti proyek. Klaim tanpa bukti tidak dinilai sebagai kemampuan."
+      }
+    ],
+    "interview_probes": [
+      "Ceritakan proyek terakhir di mana Anda memakai salah satu skill yang Anda daftar — apa peran, teknologi, dan hasil Anda secara konkret?",
+      "Konfirmasi gap kriteria: Tautan spesifik repositori GitHub untuk proyek AI belum diverifikasi melalui evidence.",
+      "Ceritakan arsitektur proyek terkuat Anda: keputusan teknis apa yang Anda ambil dan trade-off-nya?"
+    ],
+    "dictionary": {
+      "schema_version": "1.0",
+      "candidate_id": "CAND-B9EB40A3",
+      "candidate_summary": "Raka Pratama Wijaya is an AI Engineer and Backend Developer currently in his final year pursuing a Bachelor's degree in Informatics Engineering at Institut Teknologi Nusantara. He has practical experience in developing LLM-based applications, FastAPI REST APIs, and Pydantic structured output validation through internships and university research projects. He is available for a 3-month remote paid internship with an allocation of 8-10 hours per week.",
+      "profile": {
+        "full_name": "Raka Pratama Wijaya",
+        "education_overview": [
+          {
+            "institution": "Institut Teknologi Nusantara (Bandung)",
+            "degree_major": "S1 Teknik Informatika",
+            "period_raw": "Agu 2023 – Sekarang",
+            "relevant_coursework": [
+              "Natural Language Processing",
+              "Rekayasa Perangkat Lunak",
+              "Sistem Basis Data"
+            ],
+            "mapping_status": "explicit"
+          }
+        ],
+        "availability_signals": [
+          "Siap berkomitmen penuh selama 3 bulan (alokasi waktu 8–10 jam/minggu) untuk program Paid Internship di Sekolah Karir secara remote."
+        ],
+        "availability_conflicts": [],
+        "portfolio_links": [
+          "linkedin.com/in/rakapratama-mock",
+          "github.com/rakapratama-ai-mock",
+          "portfolio.rakamock.dev"
+        ],
+        "secondary_role_signals": [
+          "Back-End Engineer"
+        ]
+      },
+      "skills_claimed": [
+        "Gemini API (google-genai SDK)",
+        "OpenAI API",
+        "Structured Outputs (Pydantic / JSON Schema)",
+        "Prompt Engineering",
+        "RAG Fundamental",
+        "ChromaDB",
+        "Evaluasi Output Dasar",
+        "Python (Menengah-Mahir)",
+        "FastAPI",
+        "SQL (PostgreSQL, SQLite)",
+        "Git/GitHub",
+        "REST API Integration",
+        "Streamlit"
+      ],
+      "skills_with_evidence": [
+        "Google Gemini API",
+        "OpenAI API",
+        "Python",
+        "FastAPI",
+        "Pydantic",
+        "ChromaDB",
+        "Gemini Flash API",
+        "PostgreSQL",
+        "JWT",
+        "Pytest",
+        "Postman"
+      ],
+      "projects": [
+        {
+          "title": "DocuCheck RAG Assistant — Proyek Riset Laboratorium AI Kampus",
+          "organization": "Proyek Riset Laboratorium AI Kampus",
+          "period_raw": "Nov 2025 – Feb 2026",
+          "description_summary": "Membangun prototipe tanya-jawab panduan akademik berbasis Retrieval-Augmented Generation (RAG) menggunakan Python, ChromaDB, dan Gemini Flash API. Menyusun skrip evaluasi kualitas output sederhana terhadap 35 sampel pertanyaan uji.",
+          "tech_stack": [
+            "Python",
+            "ChromaDB",
+            "Gemini Flash API"
+          ],
+          "evidence_ids": [
+            "EV_PROJ_01"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "experiences": [
+        {
+          "title": "AI & Backend Engineering Intern",
+          "organization": "PT Kreasi Solusi Digital (Bandung)",
+          "period_raw": "Mar 2026 – Agu 2026",
+          "description_summary": "Mengintegrasikan Google Gemini API dan OpenAI API ke dalam pipeline pemrosesan tiket keluhan pelanggan berbasis Python dan FastAPI. Menerapkan kontrak data Pydantic response_schema dan merancang mekanisme human-in-the-loop.",
+          "tech_stack": [
+            "Google Gemini API",
+            "OpenAI API",
+            "Python",
+            "FastAPI",
+            "Pydantic"
+          ],
+          "evidence_ids": [
+            "EV_EXP_01"
+          ],
+          "mapping_status": "explicit"
+        },
+        {
+          "title": "Asisten Praktikum Pemrograman Backend",
+          "organization": "Institut Teknologi Nusantara (Fiktif)",
+          "period_raw": "Sep 2025 – Jan 2026",
+          "description_summary": "Membimbing 45 mahasiswa dalam perancangan RESTful API, manajemen database PostgreSQL, autentikasi JWT, dan pengujian endpoint menggunakan Pytest serta Postman.",
+          "tech_stack": [
+            "RESTful API",
+            "PostgreSQL",
+            "JWT",
+            "Pytest",
+            "Postman"
+          ],
+          "evidence_ids": [
+            "EV_EXP_02"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "certifications": [],
+      "additional_sections": [
+        {
+          "section_title_original": "KEAHLIAN TEKNIS & KETERSEDIAAN",
+          "guessed_category": "Skills & Availability",
+          "summary": "Detailed technical skills categorized under AI & LLM Engineering, Programming & Backend, and Program Commitment."
+        }
+      ],
+      "ambiguous_mappings": [],
+      "unmapped_information": [],
+      "evidence_index": [
+        {
+          "evidence_id": "EV_EXP_01",
+          "source_section": "PENGALAMAN KERJA & PROYEK",
+          "quote": "Mengintegrasikan Google Gemini API dan OpenAI API ke dalam pipeline pemrosesan tiket keluhan pelanggan berbasis Python dan FastAPI untuk merangkum serta mengklasifikasikan urgensi laporan.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "EV_PROJ_01",
+          "source_section": "PENGALAMAN KERJA & PROYEK",
+          "quote": "Membangun prototipe tanya-jawab panduan akademik berbasis Retrieval-Augmented Generation (RAG) menggunakan Python, ChromaDB, dan Gemini Flash API.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "EV_EXP_02",
+          "source_section": "PENGALAMAN KERJA & PROYEK",
+          "quote": "Membimbing 45 mahasiswa dalam perancangan RESTful API, manajemen database PostgreSQL, autentikasi JWT, dan pengujian endpoint menggunakan Pytest serta Postman.",
+          "is_quote_verified": true
+        }
+      ],
+      "self_declared_limitations": [],
+      "extraction_notes": {
+        "missing_fields": [],
+        "layout_uncertainty": false,
+        "document_language": "id"
+      }
+    }
+  },
+  "Nadia": {
+    "candidate_id": "CAND-9EA559D5",
+    "candidate_name": "Nadia Putri Kusuma",
+    "input_file": "CV Nadia Putri Kusuma.pdf",
+    "input_source": "file upload/disk via extract_document()",
+    "extraction_backend": "Gemini (ekstraksi file + penilaian dictionary)",
+    "blueprint_role": "AI Engineer Intern - AI & Automation - Sekolah Karir",
+    "candidate_summary": "Nadia Putri Kusuma is an Information Systems student at Universitas Cendekia Yogyakarta with a 3.78 GPA, specializing in prompt design, AI evaluation, and no-code workflow automation. She has hands-on internship and community project experience in testing structured prompts and building automated pipelines using tools like Zapier, Notion AI, and Google Sheets. Currently, she is expanding her technical skills by learning basic Python.",
+    "readiness_score": 67.5,
+    "readiness_breakdown": [
+      {
+        "kriteria": "Relevansi proyek AI/ML terapan",
+        "skor_0_2": 1,
+        "bobot_%": 30,
+        "kontribusi": 15.0,
+        "gap": "Belum ada pengalaman langsung membangun dan mengintegrasikan fitur LLM ke dalam aplikasi produksi atau menggunakan API secara langsung."
+      },
+      {
+        "kriteria": "Kemampuan programming & tools",
+        "skor_0_2": 1,
+        "bobot_%": 20,
+        "kontribusi": 10.0,
+        "gap": "Penguasaan bahasa pemrograman masih terbatas pada Python dasar dan Pandas, belum menguasai FastAPI dan Pydantic."
+      },
+      {
+        "kriteria": "Verifiabilitas portofolio",
+        "skor_0_2": 1,
+        "bobot_%": 15,
+        "kontribusi": 7.5,
+        "gap": "Tidak ada tautan GitHub atau demo proyek kode yang dapat diakses untuk memverifikasi keterampilan teknis."
+      },
+      {
+        "kriteria": "Kedalaman & kejelasan timeline",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Dokumentasi & komunikasi tertulis",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Sinyal komitmen & ketersediaan",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Relevansi latar pendidikan",
+        "skor_0_2": 2,
+        "bobot_%": 5,
+        "kontribusi": 5.0,
+        "gap": null
+      }
+    ],
+    "evaluations": {
+      "candidate_id": "CAND-9EA559D5",
+      "evaluations": [
+        {
+          "criterion_id": "ai_project",
+          "score": 1,
+          "rationale": "Kandidat memiliki pengalaman dalam desain prompt, evaluasi output AI, dan otomatisasi alur kerja di EduGrowth Media, tetapi belum pernah membangun fitur berbasis LLM secara langsung di aplikasi produksi.",
+          "evidence_ids": [
+            "ev_1",
+            "ev_2"
+          ],
+          "gap": "Belum ada pengalaman langsung membangun dan mengintegrasikan fitur LLM ke dalam aplikasi produksi atau menggunakan API secara langsung."
+        },
+        {
+          "criterion_id": "programming",
+          "score": 1,
+          "rationale": "Kandidat masih berada pada tahap mempelajari Python dasar dan menggunakan skrip Pandas sederhana, belum menguasai FastAPI, Pydantic, atau integrasi API backend yang dibutuhkan peran.",
+          "evidence_ids": [
+            "ev_3"
+          ],
+          "gap": "Penguasaan bahasa pemrograman masih terbatas pada Python dasar dan Pandas, belum menguasai FastAPI dan Pydantic."
+        },
+        {
+          "criterion_id": "portfolio",
+          "score": 1,
+          "rationale": "Tautan yang disertakan berupa profil LinkedIn dan Notion workspace, namun tidak ada tautan repositori GitHub atau demo aplikasi fungsional yang dapat diverifikasi secara langsung.",
+          "evidence_ids": [],
+          "gap": "Tidak ada tautan GitHub atau demo proyek kode yang dapat diakses untuk memverifikasi keterampilan teknis."
+        },
+        {
+          "criterion_id": "timeline",
+          "score": 2,
+          "rationale": "Periode pengalaman magang dan proyek mandiri tercantum dengan jelas beserta tahun dan bulannya sehingga urutan waktu dapat dipastikan.",
+          "evidence_ids": [
+            "ev_1",
+            "ev_2",
+            "ev_3"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "documentation",
+          "score": 2,
+          "rationale": "Kandidat terbukti menyusun dokumentasi rubrik evaluasi sederhana dan best-practice prompt iteration, selaras dengan kebutuhan dokumentasi pekerjaan.",
+          "evidence_ids": [
+            "ev_2"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "commitment",
+          "score": 2,
+          "rationale": "Kandidat menyatakan kesiapan eksplisit untuk mengikuti program magang selama 3 bulan dengan alokasi 6-8 jam/minggu sesuai form.",
+          "evidence_ids": [],
+          "gap": null
+        },
+        {
+          "criterion_id": "education_rel",
+          "score": 2,
+          "rationale": "Latar belakang pendidikan S1 Sistem Informasi dengan coursework yang relevan memberikan landasan yang memadai untuk peran ini.",
+          "evidence_ids": [],
+          "gap": null
+        }
+      ]
+    },
+    "confidence": {
+      "score": 100.0,
+      "label": "High",
+      "evr": 100.0,
+      "fc": 100.0,
+      "dl": 100,
+      "fc_detail": {
+        "identitas": true,
+        "pendidikan": true,
+        "daftar_skill": true,
+        "proyek/pengalaman bertimeline jelas": true,
+        "tautan portofolio dapat dibuka": true,
+        "sinyal ketersediaan": true
+      },
+      "caps": []
+    },
+    "recommendation": {
+      "triage_label_non_final": "Partial Fit",
+      "recommended_human_action": "Interview dengan pertanyaan konfirmasi terarah, atau pertimbangkan peran alternatif.",
+      "decision_owner": "Human recruiter (sistem tidak memutuskan)",
+      "explore_secondary_role": "Prompt Engineer — kekuatan kandidat lebih selaras ke peran ini; keputusan tetap di manusia."
+    },
+    "caveats": [
+      {
+        "code": "SELF_DECLARED_LIMITATION",
+        "severity": "medium",
+        "message": "Batasan yang dinyatakan kandidat sendiri: Belum pernah membangun layanan backend REST API atau mengintegrasikan SDK LLM secara langsung di dalam kode aplikasi produksi."
+      }
+    ],
+    "interview_probes": [
+      "Anda menuliskan batasan berikut di CV — bagaimana rencana Anda mengatasinya selama program berjalan?",
+      "Konfirmasi gap kriteria: Belum ada pengalaman langsung membangun dan mengintegrasikan fitur LLM ke dalam aplikasi produksi atau menggunakan API secara langsung.",
+      "Konfirmasi gap kriteria: Penguasaan bahasa pemrograman masih terbatas pada Python dasar dan Pandas, belum menguasai FastAPI dan Pydantic.",
+      "Konfirmasi gap kriteria: Tidak ada tautan GitHub atau demo proyek kode yang dapat diakses untuk memverifikasi keterampilan teknis."
+    ],
+    "dictionary": {
+      "schema_version": "1.0",
+      "candidate_id": "CAND-9EA559D5",
+      "candidate_summary": "Nadia Putri Kusuma is an Information Systems student at Universitas Cendekia Yogyakarta with a 3.78 GPA, specializing in prompt design, AI evaluation, and no-code workflow automation. She has hands-on internship and community project experience in testing structured prompts and building automated pipelines using tools like Zapier, Notion AI, and Google Sheets. Currently, she is expanding her technical skills by learning basic Python.",
+      "profile": {
+        "full_name": "Nadia Putri Kusuma",
+        "education_overview": [
+          {
+            "institution": "Universitas Cendekia Yogyakarta (Fiktif)",
+            "degree_major": "S1 Sistem Informasi",
+            "period_raw": "Agu 2024 – Sekarang",
+            "relevant_coursework": [
+              "Analisis Proses Bisnis",
+              "Manajemen Produk Digital",
+              "Interaksi Manusia-Komputer"
+            ],
+            "mapping_status": "explicit"
+          }
+        ],
+        "availability_signals": [
+          "Siap mengikuti program 3 bulan (Paid Internship 6-8 jam/minggu maupun Volunteership)"
+        ],
+        "availability_conflicts": [],
+        "portfolio_links": [
+          "linkedin.com/in/nadiakusuma-mock",
+          "notion.so/nadia-prompt-library-mock"
+        ],
+        "secondary_role_signals": [
+          "Prompt Engineer"
+        ]
+      },
+      "skills_claimed": [
+        "Prompt Design & Iteration",
+        "Few-Shot & Chain-of-Thought Structuring",
+        "Model Output Comparison",
+        "AI Output QA & Rubric Documentation",
+        "Notion Workspace",
+        "Zapier",
+        "Make.com",
+        "Google AI Studio Playground",
+        "Google Sheets",
+        "Python Dasar"
+      ],
+      "skills_with_evidence": [
+        "Prompt Design & Iteration",
+        "Few-Shot & Chain-of-Thought Structuring",
+        "Model Output Comparison",
+        "Zapier",
+        "Notion AI",
+        "Python Dasar",
+        "Google Sheets"
+      ],
+      "projects": [
+        {
+          "title": "Perancang Eksperimen Evaluasi Prompt",
+          "organization": "Komunitas AI Kampus Yogyakarta",
+          "period_raw": "Okt 2025 – Jan 2026",
+          "description_summary": "Menyusun dokumentasi best-practice prompt iteration dan rubrik evaluasi sederhana untuk menguji ketahanan prompt terhadap instruksi yang ambigu pada kasus review CV mahasiswa.",
+          "tech_stack": [],
+          "evidence_ids": [
+            "ev_2"
+          ],
+          "mapping_status": "explicit"
+        },
+        {
+          "title": "Proyek Mandiri: Eksplorasi Dasar Python & Spreadsheet",
+          "organization": "Tugas Kuliah Sistem Informasi",
+          "period_raw": "Sep 2025 – Des 2025",
+          "description_summary": "Mengolah data hasil survei kesiapan kerja 120 mahasiswa menggunakan Google Sheets dan skrip dasar Python (Pandas) di Google Colab untuk visualisasi grafik deskriptif.",
+          "tech_stack": [
+            "Google Sheets",
+            "Python",
+            "Pandas",
+            "Google Colab"
+          ],
+          "evidence_ids": [
+            "ev_3"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "experiences": [
+        {
+          "title": "AI Content & Workflow Intern",
+          "organization": "EduGrowth Media (Yogyakarta)",
+          "period_raw": "Feb 2026 – Jul 2026",
+          "description_summary": "Mendesain dan menguji template prompt terstruktur, membandingkan kualitas output LLM, serta membangun otomasi alur kerja menggunakan Zapier dan Notion AI.",
+          "tech_stack": [
+            "Gemini 2.5 Flash",
+            "Claude 3.5 Sonnet",
+            "GPT-4o",
+            "Zapier",
+            "Notion AI"
+          ],
+          "evidence_ids": [
+            "ev_1"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "certifications": [],
+      "additional_sections": [
+        {
+          "section_title_original": "KOMPETENSI & KETERSEDIAAN",
+          "guessed_category": "Skills and Availability",
+          "summary": "Detailing expertise in Prompt & AI Evaluation, No-Code & Automation, and Pemrograman & Teknis along with availability."
+        }
+      ],
+      "ambiguous_mappings": [],
+      "unmapped_information": [
+        "Mock Candidate CV #2 (Partial Fit / Role Reroute Persona) — Data Sintetis untuk Simulasi Seleksi"
+      ],
+      "evidence_index": [
+        {
+          "evidence_id": "ev_1",
+          "source_section": "PENGALAMAN ORGANISASI & PROYEK",
+          "quote": "Mendesain dan menguji lebih dari 40 template prompt terstruktur (menggunakan pendekatan few-shot prompting dan role-constraints) untuk mempercepat pembuatan draf materi edukasi karier.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_2",
+          "source_section": "PENGALAMAN ORGANISASI & PROYEK",
+          "quote": "Menyusun dokumentasi best-practice prompt iteration dan rubrik evaluasi sederhana (skala 1–5) untuk menguji ketahanan prompt terhadap instruksi yang ambigu pada kasus review CV mahasiswa.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_3",
+          "source_section": "PENGALAMAN ORGANISASI & PROYEK",
+          "quote": "Mengolah data hasil survei kesiapan kerja 120 mahasiswa menggunakan Google Sheets dan skrip dasar Python (Pandas) di Google Colab untuk visualisasi grafik deskriptif.",
+          "is_quote_verified": true
+        }
+      ],
+      "self_declared_limitations": [
+        "Belum pernah membangun layanan backend REST API atau mengintegrasikan SDK LLM secara langsung di dalam kode aplikasi produksi."
+      ],
+      "extraction_notes": {
+        "missing_fields": [],
+        "layout_uncertainty": false,
+        "document_language": "id"
+      }
+    }
+  },
+  "Bima": {
+    "candidate_id": "CAND-35504548",
+    "candidate_name": "BIMA ADITYA SAPUTRA",
+    "input_file": "CV Bima Aditya Saputra.pdf",
+    "input_source": "file upload/disk via extract_document()",
+    "extraction_backend": "Gemini (ekstraksi file + penilaian dictionary)",
+    "blueprint_role": "AI Engineer Intern - AI & Automation - Sekolah Karir",
+    "candidate_summary": "Bima Aditya Saputra is an AI Engineer and Autonomous AI Architect with a focus on generative AI, LLM orchestration, and distributed MLOps. Currently studying S1 Manajemen Bisnis at Universitas Mitra Mandiri, he has experience as an AI Innovation Lead in a startup stealth mode project, seminar participant, and freelance digital project contributor. He is currently completing a full-time internship at a local creative agency.",
+    "readiness_score": 32.5,
+    "readiness_breakdown": [
+      {
+        "kriteria": "Relevansi proyek AI/ML terapan",
+        "skor_0_2": 1,
+        "bobot_%": 30,
+        "kontribusi": 15.0,
+        "gap": "Belum terbukti membangun dan mengintegrasikan fitur LLM secara langsung pada proyek nyata dengan hasil terukur."
+      },
+      {
+        "kriteria": "Kemampuan programming & tools",
+        "skor_0_2": 0,
+        "bobot_%": 20,
+        "kontribusi": 0.0,
+        "gap": "Skills yang diklaim belum didukung oleh bukti penggunaan nyata dalam proyek."
+      },
+      {
+        "kriteria": "Verifiabilitas portofolio",
+        "skor_0_2": 0,
+        "bobot_%": 15,
+        "kontribusi": 0.0,
+        "gap": "Tidak ada tautan portofolio yang dapat diverifikasi."
+      },
+      {
+        "kriteria": "Kedalaman & kejelasan timeline",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Timeline pengalaman dan proyek kurang spesifik dan tidak memiliki kejelasan durasi."
+      },
+      {
+        "kriteria": "Dokumentasi & komunikasi tertulis",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Belum terbukti mampu membuat dokumentasi teknis kode atau hasil eksperimen LLM."
+      },
+      {
+        "kriteria": "Sinyal komitmen & ketersediaan",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Terdapat konflik ketersediaan waktu jam kerja akibat magang penuh waktu saat ini."
+      },
+      {
+        "kriteria": "Relevansi latar pendidikan",
+        "skor_0_2": 1,
+        "bobot_%": 5,
+        "kontribusi": 2.5,
+        "gap": "Jurusan kuliah tidak sejalan dengan bidang ilmu komputer atau teknik informatika yang lazim untuk peran AI."
+      }
+    ],
+    "evaluations": {
+      "candidate_id": "CAND-35504548",
+      "evaluations": [
+        {
+          "criterion_id": "ai_project",
+          "score": 1,
+          "rationale": "Kandidat mencantumkan peran di proyek startup stealth mode namun hanya berupa klaim membantu menggagas ide dan diskusi chatbot, tanpa rincian teknis implementasi fitur LLM nyata.",
+          "evidence_ids": [
+            "ev-1"
+          ],
+          "gap": "Belum terbukti membangun dan mengintegrasikan fitur LLM secara langsung pada proyek nyata dengan hasil terukur."
+        },
+        {
+          "criterion_id": "programming",
+          "score": 0,
+          "rationale": "Meskipun mengklaim banyak skill tingkat lanjut, tidak ada bukti atau rekam jejak penerapan bahasa pemrograman maupun tools yang terverifikasi pada bagian proyek atau pengalaman.",
+          "evidence_ids": [],
+          "gap": "Skills yang diklaim belum didukung oleh bukti penggunaan nyata dalam proyek."
+        },
+        {
+          "criterion_id": "portfolio",
+          "score": 0,
+          "rationale": "Tidak ada tautan GitHub, demo, atau portofolio yang disertakan. Tautan GitHub dinyatakan menyusul dan portofolio dalam tahap maintenance.",
+          "evidence_ids": [],
+          "gap": "Tidak ada tautan portofolio yang dapat diverifikasi."
+        },
+        {
+          "criterion_id": "timeline",
+          "score": 1,
+          "rationale": "Periode pengalaman dan proyek dicantumkan secara umum atau tidak lengkap, seperti 'Tahun 2025 / 2026' dan tanggal seminar tidak dicantumkan.",
+          "evidence_ids": [
+            "ev-1",
+            "ev-2"
+          ],
+          "gap": "Timeline pengalaman dan proyek kurang spesifik dan tidak memiliki kejelasan durasi."
+        },
+        {
+          "criterion_id": "documentation",
+          "score": 1,
+          "rationale": "Hanya terdapat catatan pembuatan dokumen laporan pada pekerjaan lepas, namun tidak ada sampel dokumentasi kode atau hasil eksperimen AI.",
+          "evidence_ids": [
+            "ev-3"
+          ],
+          "gap": "Belum terbukti mampu membuat dokumentasi teknis kode atau hasil eksperimen LLM."
+        },
+        {
+          "criterion_id": "commitment",
+          "score": 1,
+          "rationale": "Kandidat menyatakan ketersediaan fleksibel, namun terdapat konflik waktu yang signifikan karena sedang menjalani magang penuh waktu di tempat lain pada jam kerja.",
+          "evidence_ids": [],
+          "gap": "Terdapat konflik ketersediaan waktu jam kerja akibat magang penuh waktu saat ini."
+        },
+        {
+          "criterion_id": "education_rel",
+          "score": 1,
+          "rationale": "Latar belakang pendidikan kandidat adalah S1 Manajemen Bisnis, yang kurang relevan secara langsung dengan peran teknis AI Engineer.",
+          "evidence_ids": [],
+          "gap": "Jurusan kuliah tidak sejalan dengan bidang ilmu komputer atau teknik informatika yang lazim untuk peran AI."
+        }
+      ]
+    },
+    "confidence": {
+      "score": 91.7,
+      "label": "High",
+      "evr": 100.0,
+      "fc": 66.7,
+      "dl": 100,
+      "fc_detail": {
+        "identitas": true,
+        "pendidikan": true,
+        "daftar_skill": true,
+        "proyek/pengalaman bertimeline jelas": false,
+        "tautan portofolio dapat dibuka": false,
+        "sinyal ketersediaan": true
+      },
+      "caps": []
+    },
+    "recommendation": {
+      "triage_label_non_final": "Low Alignment",
+      "recommended_human_action": "Needs Human Review — bukti pada CV saat ini belum selaras; BUKAN penolakan otomatis.",
+      "decision_owner": "Human recruiter (sistem tidak memutuskan)"
+    },
+    "caveats": [
+      {
+        "code": "UNVERIFIED_BUZZWORD",
+        "severity": "high",
+        "message": "34 skill diklaim, hanya 0 terhubung bukti proyek. Klaim tanpa bukti tidak dinilai sebagai kemampuan."
+      },
+      {
+        "code": "MISSING_TIMELINE",
+        "severity": "medium",
+        "message": "Sebagian periode pengalaman/proyek tidak tercantum atau tidak jelas sehingga durasi tidak dapat dipastikan."
+      },
+      {
+        "code": "PORTFOLIO_UNVERIFIABLE",
+        "severity": "medium",
+        "message": "Tidak ada tautan portofolio yang dapat dibuka untuk verifikasi deliverable."
+      },
+      {
+        "code": "SELF_DECLARED_LIMITATION",
+        "severity": "medium",
+        "message": "Batasan yang dinyatakan kandidat sendiri: GitHub: [Link menyusul saat wawancara]"
+      },
+      {
+        "code": "SELF_DECLARED_LIMITATION",
+        "severity": "medium",
+        "message": "Batasan yang dinyatakan kandidat sendiri: Portfolio: sedang dalam tahap maintenance"
+      }
+    ],
+    "interview_probes": [
+      "Ceritakan proyek terakhir di mana Anda memakai salah satu skill yang Anda daftar — apa peran, teknologi, dan hasil Anda secara konkret?",
+      "Bisa jelaskan periode dan durasi keterlibatan Anda pada pengalaman/proyek yang tanggalnya belum tercantum?",
+      "Bersediakah Anda membagikan tautan repositori/demo yang dapat kami buka sebelum interview berikutnya?",
+      "Anda menuliskan batasan berikut di CV — bagaimana rencana Anda mengatasinya selama program berjalan?",
+      "Konfirmasi gap kriteria: Skills yang diklaim belum didukung oleh bukti penggunaan nyata dalam proyek."
+    ],
+    "dictionary": {
+      "schema_version": "1.0.0",
+      "candidate_id": "CAND-35504548",
+      "candidate_summary": "Bima Aditya Saputra is an AI Engineer and Autonomous AI Architect with a focus on generative AI, LLM orchestration, and distributed MLOps. Currently studying S1 Manajemen Bisnis at Universitas Mitra Mandiri, he has experience as an AI Innovation Lead in a startup stealth mode project, seminar participant, and freelance digital project contributor. He is currently completing a full-time internship at a local creative agency.",
+      "profile": {
+        "full_name": "BIMA ADITYA SAPUTRA",
+        "education_overview": [
+          {
+            "institution": "Universitas Mitra Mandiri (Jakarta)",
+            "degree_major": "S1 Manajemen Bisnis",
+            "period_raw": "Angkatan 2023",
+            "relevant_coursework": [],
+            "mapping_status": "explicit"
+          }
+        ],
+        "availability_signals": [
+          "Fleksibel"
+        ],
+        "availability_conflicts": [
+          "Saat ini juga sedang menjalani magang penuh waktu (full-time) di salah satu agensi kreatif lokal pada jam kerja Senin–Jumat pukul 09.00–17.00 WIB"
+        ],
+        "portfolio_links": [],
+        "secondary_role_signals": [
+          "Autonomous AI Architect",
+          "Full-Stack Deep Learning Innovator",
+          "AI Engineer"
+        ]
+      },
+      "skills_claimed": [
+        "Artificial General Intelligence (AGI)",
+        "Multi-Agent Autonomous LLM Orchestration",
+        "Enterprise RAG Architecture",
+        "Distributed MLOps",
+        "OpenAI GPT-4o",
+        "Gemini Ultra/Flash",
+        "Claude 3.5",
+        "LangChain",
+        "LlamaIndex",
+        "AutoGPT",
+        "CrewAI",
+        "Fine-Tuning LoRA/QLoRA",
+        "Vector Database (Pinecone, Milvus, Weaviate, Qdrant)",
+        "GraphRAG",
+        "Pydantic",
+        "JSON Schema",
+        "Prompt Engineering",
+        "Python",
+        "Rust",
+        "Go",
+        "TypeScript",
+        "FastAPI",
+        "Django",
+        "Node.js",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "AWS SageMaker",
+        "GCP Vertex AI",
+        "PyTorch",
+        "TensorFlow",
+        "CUDA",
+        "Kafka",
+        "Redis"
+      ],
+      "skills_with_evidence": [],
+      "projects": [
+        {
+          "title": "AI Innovation Lead — Proyek Startup Stealth Mode",
+          "organization": "Proyek Startup Stealth Mode",
+          "period_raw": "Tahun 2025 / 2026",
+          "description_summary": "Berperan aktif membantu tim dalam menggagas ide pemanfaatan teknologi kecerdasan buatan dan berpartisipasi dalam diskusi perancangan fitur chatbot pintar.",
+          "tech_stack": [],
+          "evidence_ids": [
+            "ev-1"
+          ],
+          "mapping_status": "explicit"
+        },
+        {
+          "title": "Peserta Seminar & Bootcamp Nasional Generative AI",
+          "organization": null,
+          "period_raw": "Tanggal tidak dicantumkan",
+          "description_summary": "Mengikuti sesi webinar pengenalan tren AI modern dan berkoordinasi dengan anggota kelompok untuk menyusun slide presentasi.",
+          "tech_stack": [],
+          "evidence_ids": [
+            "ev-2"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Freelance Digital Project Contributor",
+          "organization": null,
+          "period_raw": "Fleksibel",
+          "description_summary": "Menyelesaikan berbagai pekerjaan lepas di bidang digital, pembuatan dokumen laporan, dan pengelolaan operasional harian sesuai permintaan klien.",
+          "tech_stack": [],
+          "evidence_ids": [
+            "ev-3"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "certifications": [],
+      "additional_sections": [
+        {
+          "section_title_original": "EXECUTIVE SUMMARY",
+          "guessed_category": "summary",
+          "summary": "Talenta teknologi visioner dengan penguasaan mendalam di bidang AGI dan arsitektur LLM."
+        }
+      ],
+      "ambiguous_mappings": [],
+      "unmapped_information": [],
+      "evidence_index": [
+        {
+          "evidence_id": "ev-1",
+          "source_section": "PENGALAMAN PROYEK & AKTIVITAS",
+          "quote": "Berperan aktif membantu tim dalam menggagas ide pemanfaatan teknologi kecerdasan buatan yang canggih untuk meningkatkan produktivitas pengguna secara signifikan.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev-2",
+          "source_section": "PENGALAMAN PROYEK & AKTIVITAS",
+          "quote": "Mengikuti sesi webinar pengenalan tren AI modern, cara kerja Large Language Models secara umum, serta demonstrasi penggunaan aplikasi chat berbasis web.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev-3",
+          "source_section": "PENGALAMAN PROYEK & AKTIVITAS",
+          "quote": "Menyelesaikan berbagai pekerjaan lepas di bidang digital, pembuatan dokumen laporan, dan pengelolaan operasional harian sesuai permintaan klien.",
+          "is_quote_verified": true
+        }
+      ],
+      "self_declared_limitations": [
+        "GitHub: [Link menyusul saat wawancara]",
+        "Portfolio: sedang dalam tahap maintenance"
+      ],
+      "extraction_notes": {
+        "missing_fields": [],
+        "layout_uncertainty": false,
+        "document_language": "id"
+      }
+    }
+  },
+  "Kevin": {
+    "candidate_id": "CAND-1A2A0B7F",
+    "candidate_name": "Kevin Reynaldi Santoso",
+    "input_file": "CV Kevin Reynaldi Santoso.pdf",
+    "input_source": "file upload/disk via extract_document()",
+    "extraction_backend": "Gemini (ekstraksi file + penilaian dictionary)",
+    "blueprint_role": "AI Engineer Intern - AI & Automation - Sekolah Karir",
+    "candidate_summary": "Kevin Reynaldi Santoso is a final-year Computer Engineering undergraduate focused on building reliable LLM workflows, schema-locked API integrations, and grounded document assistants. He has hands-on internship and project experience in AI and backend engineering using Python, FastAPI, and various LLM tools.",
+    "readiness_score": 87.5,
+    "readiness_breakdown": [
+      {
+        "kriteria": "Relevansi proyek AI/ML terapan",
+        "skor_0_2": 2,
+        "bobot_%": 30,
+        "kontribusi": 30.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Kemampuan programming & tools",
+        "skor_0_2": 2,
+        "bobot_%": 20,
+        "kontribusi": 20.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Verifiabilitas portofolio",
+        "skor_0_2": 1,
+        "bobot_%": 15,
+        "kontribusi": 7.5,
+        "gap": "Perlu verifikasi langsung tautan repositori GitHub kandidat untuk memastikan kode dapat diakses."
+      },
+      {
+        "kriteria": "Kedalaman & kejelasan timeline",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Periode pada pengalaman asisten praktikum belum lengkap ([Periode belum dicantumkan])."
+      },
+      {
+        "kriteria": "Dokumentasi & komunikasi tertulis",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Sinyal komitmen & ketersediaan",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Relevansi latar pendidikan",
+        "skor_0_2": 2,
+        "bobot_%": 5,
+        "kontribusi": 5.0,
+        "gap": null
+      }
+    ],
+    "evaluations": {
+      "candidate_id": "CAND-1A2A0B7F",
+      "evaluations": [
+        {
+          "criterion_id": "ai_project",
+          "score": 2,
+          "rationale": "Kandidat memiliki bukti kuat proyek AI dan integrasi LLM nyata, seperti SyllabusMate RAG Bot dan pengalaman magang di PT Solusi Awan Nusantara.",
+          "evidence_ids": [
+            "ev_proj_1",
+            "ev_proj_2",
+            "ev_exp_1"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "programming",
+          "score": 2,
+          "rationale": "Penguasaan bahasa Python, FastAPI, Pydantic, dan integrasi LLM API terbukti digunakan secara langsung dalam proyek dan magang.",
+          "evidence_ids": [
+            "ev_proj_1",
+            "ev_proj_2",
+            "ev_exp_1"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "portfolio",
+          "score": 1,
+          "rationale": "Tautan portofolio dan GitHub tercantum pada dictionary, namun tautan spesifik repo di dalam teks bukti belum diverifikasi secara langsung melalui URL hidup.",
+          "evidence_ids": [
+            "ev_proj_1"
+          ],
+          "gap": "Perlu verifikasi langsung tautan repositori GitHub kandidat untuk memastikan kode dapat diakses."
+        },
+        {
+          "criterion_id": "timeline",
+          "score": 1,
+          "rationale": "Sebagian besar pengalaman memiliki timeline yang jelas, namun pada pengalaman Asisten Praktikum periode belum dicantumkan.",
+          "evidence_ids": [
+            "ev_exp_2"
+          ],
+          "gap": "Periode pada pengalaman asisten praktikum belum lengkap ([Periode belum dicantumkan])."
+        },
+        {
+          "criterion_id": "documentation",
+          "score": 2,
+          "rationale": "Kandidat terbukti membuat skrip evaluasi sederhana dan mendokumentasikan hasil eksperimen pada proyek RAG Bot dan layanan triage.",
+          "evidence_ids": [
+            "ev_proj_1",
+            "ev_proj_2"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "commitment",
+          "score": 2,
+          "rationale": "Ketersediaan eksplisit tercantum dengan jelas yaitu magang berbayar 3 bulan dengan alokasi 8-10 jam per minggu secara remote.",
+          "evidence_ids": [],
+          "gap": null
+        },
+        {
+          "criterion_id": "education_rel",
+          "score": 2,
+          "rationale": "Latar belakang pendidikan S1 Teknik Komputer dengan coursework yang relevan seperti NLP dan Software Engineering sudah sesuai.",
+          "evidence_ids": [],
+          "gap": null
+        }
+      ]
+    },
+    "confidence": {
+      "score": 100.0,
+      "label": "High",
+      "evr": 100.0,
+      "fc": 100.0,
+      "dl": 100,
+      "fc_detail": {
+        "identitas": true,
+        "pendidikan": true,
+        "daftar_skill": true,
+        "proyek/pengalaman bertimeline jelas": true,
+        "tautan portofolio dapat dibuka": true,
+        "sinyal ketersediaan": true
+      },
+      "caps": []
+    },
+    "recommendation": {
+      "triage_label_non_final": "Strong Fit",
+      "recommended_human_action": "Prioritaskan untuk interview; tetap baca caveats sebelum memutuskan.",
+      "decision_owner": "Human recruiter (sistem tidak memutuskan)"
+    },
+    "caveats": [
+      {
+        "code": "MISSING_TIMELINE",
+        "severity": "medium",
+        "message": "Sebagian periode pengalaman/proyek tidak tercantum atau tidak jelas sehingga durasi tidak dapat dipastikan."
+      }
+    ],
+    "interview_probes": [
+      "Bisa jelaskan periode dan durasi keterlibatan Anda pada pengalaman/proyek yang tanggalnya belum tercantum?",
+      "Konfirmasi gap kriteria: Perlu verifikasi langsung tautan repositori GitHub kandidat untuk memastikan kode dapat diakses.",
+      "Konfirmasi gap kriteria: Periode pada pengalaman asisten praktikum belum lengkap ([Periode belum dicantumkan])."
+    ],
+    "dictionary": {
+      "schema_version": "1.0.0",
+      "candidate_id": "CAND-1A2A0B7F",
+      "candidate_summary": "Kevin Reynaldi Santoso is a final-year Computer Engineering undergraduate focused on building reliable LLM workflows, schema-locked API integrations, and grounded document assistants. He has hands-on internship and project experience in AI and backend engineering using Python, FastAPI, and various LLM tools.",
+      "profile": {
+        "full_name": "Kevin Reynaldi Santoso",
+        "education_overview": [
+          {
+            "institution": "Universitas Brawijaya Mandiri (Fiktif)",
+            "degree_major": "S1 Teknik Komputer",
+            "period_raw": "2023 – Sekarang",
+            "relevant_coursework": [
+              "NLP",
+              "Software Engineering",
+              "Database Systems"
+            ],
+            "mapping_status": "explicit"
+          }
+        ],
+        "availability_signals": [
+          "Ready for 3-month Paid Internship (8–10 hrs/week remote)"
+        ],
+        "availability_conflicts": [
+          "Skripsi guidance only on Friday afternoon."
+        ],
+        "portfolio_links": [
+          "github.com/kevinsantoso-ai-mock",
+          "portfolio.kevinmock.dev",
+          "in/kevinsantoso-mock"
+        ],
+        "secondary_role_signals": [
+          "Back-End Engineer"
+        ]
+      },
+      "skills_claimed": [
+        "Gemini API",
+        "OpenAI SDK",
+        "Pydantic Structured Outputs",
+        "JSON Schema",
+        "RAG",
+        "ChromaDB",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "SQLite",
+        "Git",
+        "Pytest",
+        "Streamlit",
+        "Output Evaluation",
+        "Human-in-the-Loop Triage"
+      ],
+      "skills_with_evidence": [
+        "Python",
+        "ChromaDB",
+        "Gemini Flash API",
+        "FastAPI",
+        "Pydantic",
+        "OpenAI API",
+        "PostgreSQL",
+        "RESTful API",
+        "JWT",
+        "Pytest",
+        "Postman"
+      ],
+      "projects": [
+        {
+          "title": "SyllabusMate RAG Bot",
+          "organization": "Lab AI Kampus",
+          "period_raw": "Nov 2025 – Feb 2026",
+          "description_summary": "Built an academic syllabus Q&A prototype using Python, ChromaDB, and Gemini Flash API. Created a lightweight evaluation script across 35 test queries to verify source quote faithfulness and detect hallucinated answers.",
+          "tech_stack": [
+            "Python",
+            "ChromaDB",
+            "Gemini Flash API"
+          ],
+          "evidence_ids": [
+            "ev_proj_1"
+          ],
+          "mapping_status": "explicit"
+        },
+        {
+          "title": "SupportTicket Triage API — Internal Prototype",
+          "organization": null,
+          "period_raw": "Mar 2026 – Agu 2026",
+          "description_summary": "Designed a structured JSON extraction microservice with FastAPI and Pydantic response_schema that cut malformed LLM JSON outputs and routed low-confidence tickets to human CS reviewers.",
+          "tech_stack": [
+            "FastAPI",
+            "Pydantic"
+          ],
+          "evidence_ids": [
+            "ev_proj_2"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "experiences": [
+        {
+          "title": "AI & Backend Engineering Intern",
+          "organization": "PT Solusi Awan Nusantara",
+          "period_raw": "Mar 2026 – Agu 2026",
+          "description_summary": "Mengintegrasikan Google Gemini API dan OpenAI API ke backend Python/FastAPI untuk klasifikasi urgensi keluhan pelanggan, lengkap dengan skema validasi Pydantic dan antrean review manual bagi agen CS.",
+          "tech_stack": [
+            "Google Gemini API",
+            "OpenAI API",
+            "Python",
+            "FastAPI",
+            "Pydantic"
+          ],
+          "evidence_ids": [
+            "ev_exp_1"
+          ],
+          "mapping_status": "explicit"
+        },
+        {
+          "title": "Asisten Praktikum Pemrograman Backend",
+          "organization": "Lab Teknik Komputer",
+          "period_raw": "[Periode belum dicantumkan]",
+          "description_summary": "Membimbing 45 mahasiswa dalam implementasi RESTful API, query PostgreSQL, autentikasi JWT, serta pengujian endpoint menggunakan Pytest dan Postman.",
+          "tech_stack": [
+            "RESTful API",
+            "PostgreSQL",
+            "JWT",
+            "Pytest",
+            "Postman"
+          ],
+          "evidence_ids": [
+            "ev_exp_2"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "certifications": [],
+      "additional_sections": [
+        {
+          "section_title_original": "DI LUAR KAMPUS",
+          "guessed_category": "extracurricular_activities",
+          "summary": "Mentor relawan kelas logika pemrograman dasar untuk siswa SMA di Malang & penulis artikel pendek teknologi di blog pribadi."
+        }
+      ],
+      "ambiguous_mappings": [],
+      "unmapped_information": [],
+      "evidence_index": [
+        {
+          "evidence_id": "ev_proj_1",
+          "source_section": "Things I Built (Selected Works)",
+          "quote": "SyllabusMate RAG Bot — Lab AI Kampus Nov 2025 – Feb 2026 Built an academic syllabus Q&A prototype using Python, ChromaDB, and Gemini Flash API (repo: github.com/kevinsantoso-ai-mock/syllabusmate-rag). Created a lightweight evaluation script across 35 test queries to verify source quote faithfulness and detect hallucinated answers. Tested at internal lab scale.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_proj_2",
+          "source_section": "Things I Built (Selected Works)",
+          "quote": "SupportTicket Triage API — Internal Prototype Mar 2026 – Agu 2026 Designed a structured JSON extraction microservice with FastAPI and Pydantic response_schema that cut malformed LLM JSON outputs from 18% to under 1% and routed low-confidence tickets to human CS reviewers.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_exp_1",
+          "source_section": "Perjalanan Karier",
+          "quote": "AI & Backend Engineering Intern — PT Solusi Awan Nusantara Mar 2026 – Agu 2026 Mengintegrasikan Google Gemini API dan OpenAI API ke backend Python/FastAPI untuk klasifikasi urgensi keluhan pelanggan, lengkap dengan skema validasi Pydantic dan antrean review manual bagi agen CS.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_exp_2",
+          "source_section": "Perjalanan Karier",
+          "quote": "Asisten Praktikum Pemrograman Backend — Lab Teknik Komputer [Periode belum dicantumkan] Membimbing 45 mahasiswa dalam implementasi RESTful API, query PostgreSQL, autentikasi JWT, serta pengujian endpoint menggunakan Pytest dan Postman.",
+          "is_quote_verified": true
+        }
+      ],
+      "self_declared_limitations": [],
+      "extraction_notes": {
+        "missing_fields": [],
+        "layout_uncertainty": false,
+        "document_language": "id"
+      }
+    }
+  },
+  "Farhan": {
+    "candidate_id": "CAND-BEF1ECBE",
+    "candidate_name": "Farhan Rizky Alamsyah",
+    "input_file": "CV Farhan Rizky Alamsyah.pdf",
+    "input_source": "file upload/disk via extract_document()",
+    "extraction_backend": "Gemini (ekstraksi file + penilaian dictionary)",
+    "blueprint_role": "AI Engineer Intern - AI & Automation - Sekolah Karir",
+    "candidate_summary": "Farhan Rizky Alamsyah is an AI Engineer and Data Analyst student at Politeknik Sains Terapan Semarang with practical experience in automation, NLP research, and chatbot development. He has contributed to data projects utilizing Python, Gemini API, OpenAI API, and Pandas, and is currently seeking a paid internship opportunity.",
+    "readiness_score": 82.5,
+    "readiness_breakdown": [
+      {
+        "kriteria": "Relevansi proyek AI/ML terapan",
+        "skor_0_2": 2,
+        "bobot_%": 30,
+        "kontribusi": 30.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Kemampuan programming & tools",
+        "skor_0_2": 2,
+        "bobot_%": 20,
+        "kontribusi": 20.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Verifiabilitas portofolio",
+        "skor_0_2": 1,
+        "bobot_%": 15,
+        "kontribusi": 7.5,
+        "gap": "Tautan portofolio belum disertai bukti verifikasi isi repositori yang spesifik."
+      },
+      {
+        "kriteria": "Kedalaman & kejelasan timeline",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Periode pada proyek riset mandiri kurang spesifik (hanya tahun 2025)."
+      },
+      {
+        "kriteria": "Dokumentasi & komunikasi tertulis",
+        "skor_0_2": 1,
+        "bobot_%": 10,
+        "kontribusi": 5.0,
+        "gap": "Belum ada bukti spesifik mengenai dokumentasi kode atau laporan hasil eksperimen."
+      },
+      {
+        "kriteria": "Sinyal komitmen & ketersediaan",
+        "skor_0_2": 2,
+        "bobot_%": 10,
+        "kontribusi": 10.0,
+        "gap": null
+      },
+      {
+        "kriteria": "Relevansi latar pendidikan",
+        "skor_0_2": 2,
+        "bobot_%": 5,
+        "kontribusi": 5.0,
+        "gap": null
+      }
+    ],
+    "evaluations": {
+      "candidate_id": "CAND-BEF1ECBE",
+      "evaluations": [
+        {
+          "criterion_id": "ai_project",
+          "score": 2,
+          "rationale": "Kandidat terbukti memiliki pengalaman nyata dalam integrasi LLM dan ekstraksi data menggunakan Gemini API pada pengalaman kerja serta chatbot RAG pada proyek.",
+          "evidence_ids": [
+            "ev_exp_1",
+            "ev_proj_2"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "programming",
+          "score": 2,
+          "rationale": "Penguasaan Python, Gemini API, OpenAI API, dan Streamlit terbukti diaplikasikan langsung dalam proyek dan pengalaman kerja.",
+          "evidence_ids": [
+            "ev_exp_1",
+            "ev_proj_2"
+          ],
+          "gap": null
+        },
+        {
+          "criterion_id": "portfolio",
+          "score": 1,
+          "rationale": "Tautan portofolio GitHub dan HuggingFace terdaftar di profil, namun tidak ada evidence_id spesifik yang memvalidasi isi tautan tersebut secara mendalam.",
+          "evidence_ids": [],
+          "gap": "Tautan portofolio belum disertai bukti verifikasi isi repositori yang spesifik."
+        },
+        {
+          "criterion_id": "timeline",
+          "score": 1,
+          "rationale": "Sebagian pengalaman memiliki periode jelas (Apr 2026 – Jul 2026), namun periode riset mandiri hanya tertulis [Tahun 2025] yang kurang presisi.",
+          "evidence_ids": [
+            "ev_exp_1",
+            "ev_proj_3"
+          ],
+          "gap": "Periode pada proyek riset mandiri kurang spesifik (hanya tahun 2025)."
+        },
+        {
+          "criterion_id": "documentation",
+          "score": 1,
+          "rationale": "Kandidat menyebutkan hasil terukur pada pengalaman kerja, namun belum ada bukti eksplisit terkait dokumentasi kode atau laporan eksperimen secara tertulis.",
+          "evidence_ids": [
+            "ev_exp_1"
+          ],
+          "gap": "Belum ada bukti spesifik mengenai dokumentasi kode atau laporan hasil eksperimen."
+        },
+        {
+          "criterion_id": "commitment",
+          "score": 2,
+          "rationale": "Ketersediaan eksplisit untuk mengikuti paid internship selama 3 bulan dengan alokasi 6-8 jam/minggu dinyatakan dengan jelas pada sinyal ketersediaan.",
+          "evidence_ids": [],
+          "gap": null
+        },
+        {
+          "criterion_id": "education_rel",
+          "score": 2,
+          "rationale": "Latar belakang pendidikan di bidang Sains Data Terapan sangat relevan dengan peran AI Engineer Intern.",
+          "evidence_ids": [],
+          "gap": null
+        }
+      ]
+    },
+    "confidence": {
+      "score": 100.0,
+      "label": "High",
+      "evr": 100.0,
+      "fc": 100.0,
+      "dl": 100,
+      "fc_detail": {
+        "identitas": true,
+        "pendidikan": true,
+        "daftar_skill": true,
+        "proyek/pengalaman bertimeline jelas": true,
+        "tautan portofolio dapat dibuka": true,
+        "sinyal ketersediaan": true
+      },
+      "caps": []
+    },
+    "recommendation": {
+      "triage_label_non_final": "Strong Fit",
+      "recommended_human_action": "Prioritaskan untuk interview; tetap baca caveats sebelum memutuskan.",
+      "decision_owner": "Human recruiter (sistem tidak memutuskan)"
+    },
+    "caveats": [
+      {
+        "code": "MISSING_TIMELINE",
+        "severity": "medium",
+        "message": "Sebagian periode pengalaman/proyek tidak tercantum atau tidak jelas sehingga durasi tidak dapat dipastikan."
+      }
+    ],
+    "interview_probes": [
+      "Bisa jelaskan periode dan durasi keterlibatan Anda pada pengalaman/proyek yang tanggalnya belum tercantum?",
+      "Konfirmasi gap kriteria: Tautan portofolio belum disertai bukti verifikasi isi repositori yang spesifik.",
+      "Konfirmasi gap kriteria: Periode pada proyek riset mandiri kurang spesifik (hanya tahun 2025).",
+      "Konfirmasi gap kriteria: Belum ada bukti spesifik mengenai dokumentasi kode atau laporan hasil eksperimen."
+    ],
+    "dictionary": {
+      "schema_version": "1.0",
+      "candidate_id": "CAND-BEF1ECBE",
+      "candidate_summary": "Farhan Rizky Alamsyah is an AI Engineer and Data Analyst student at Politeknik Sains Terapan Semarang with practical experience in automation, NLP research, and chatbot development. He has contributed to data projects utilizing Python, Gemini API, OpenAI API, and Pandas, and is currently seeking a paid internship opportunity.",
+      "profile": {
+        "full_name": "Farhan Rizky Alamsyah",
+        "education_overview": [
+          {
+            "institution": "Politeknik Sains Terapan Semarang (Fiktif)",
+            "degree_major": "D4 Sains Data Terapan",
+            "period_raw": "2023–Now",
+            "relevant_coursework": [],
+            "mapping_status": "explicit"
+          }
+        ],
+        "availability_signals": [
+          "Siap mengikuti Paid Internship 3 bulan (6–8 jam/minggu, jadwal malam/akhir pekan)."
+        ],
+        "availability_conflicts": [],
+        "portfolio_links": [
+          "github.com/farhanalamsyah-mock",
+          "huggingface.co/farhan-mock"
+        ],
+        "secondary_role_signals": [
+          "AI Engineer / Data Analyst"
+        ]
+      },
+      "skills_claimed": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "Gemini API",
+        "OpenAI API",
+        "Prompt Engineering",
+        "JSON Parsing",
+        "Streamlit",
+        "FAISS",
+        "PyMuPDF",
+        "Kubernetes",
+        "Ray Distributed",
+        "vLLM",
+        "LangGraph",
+        "Rust",
+        "Neo4j GraphRAG"
+      ],
+      "skills_with_evidence": [
+        "Python",
+        "Gemini API",
+        "PyMuPDF",
+        "JSON",
+        "Streamlit",
+        "OpenAI API",
+        "FAISS",
+        "Pandas",
+        "Regex",
+        "Google Colab"
+      ],
+      "projects": [
+        {
+          "title": "IndoCareer QA Bot (Finalis Hackathon Kampus)",
+          "organization": "Capstone / Kompetisi",
+          "period_raw": "Jan 2026 – Mar 2026",
+          "description_summary": "Merancang prototipe chatbot rekomendasi karier mahasiswa berbasis RAG sederhana dan membandingkan akurasi jawaban antara prompt zero-shot vs few-shot pada 25 kasus uji.",
+          "tech_stack": [
+            "Python",
+            "Streamlit",
+            "OpenAI API",
+            "FAISS"
+          ],
+          "evidence_ids": [
+            "ev_proj_2"
+          ],
+          "mapping_status": "explicit"
+        },
+        {
+          "title": "Kontributor Riset Mandiri NLP",
+          "organization": "Komunitas Data Semarang",
+          "period_raw": "[Tahun 2025]",
+          "description_summary": "Membantu pengumpulan dataset ulasan aplikasi publik dan pembersihan teks bahasa Indonesia (normalisasi slang & stopword) untuk eksperimen klasifikasi sentimen.",
+          "tech_stack": [
+            "Pandas",
+            "Regex",
+            "Google Colab"
+          ],
+          "evidence_ids": [
+            "ev_proj_3"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "experiences": [
+        {
+          "title": "Data & Automation Intern",
+          "organization": "CV Logistik Pintar Nusantara",
+          "period_raw": "Apr 2026 – Jul 2026",
+          "description_summary": "Membuat skrip Python otomatis untuk mengekstrak tabel invoice PDF vendor ke JSON terstruktur menggunakan Gemini Flash API dan validasi skema dasar, memangkas waktu input admin dari 3 jam menjadi 25 menit/hari.",
+          "tech_stack": [
+            "Python",
+            "Gemini API",
+            "PyMuPDF",
+            "JSON"
+          ],
+          "evidence_ids": [
+            "ev_exp_1"
+          ],
+          "mapping_status": "explicit"
+        }
+      ],
+      "certifications": [],
+      "additional_sections": [
+        {
+          "section_title_original": "03 // PUBLICATIONS, AWARDS & OTHER NOTES",
+          "guessed_category": "awards_publications_notes",
+          "summary": "Includes awards (Top 5 Finalis Central Java Student Data & AI Challenge 2026), a local publication co-authorship, TOEFL ITP 560 certificate, and blood donation logistics coordinator role."
+        }
+      ],
+      "ambiguous_mappings": [],
+      "unmapped_information": [
+        "TOEFL ITP 560",
+        "Koordinator logistik acara donor darah tahunan kampus"
+      ],
+      "evidence_index": [
+        {
+          "evidence_id": "ev_exp_1",
+          "source_section": "01 // COMBINED WORK, RESEARCH & BUILD LOG",
+          "quote": "Membuat skrip Python otomatis untuk mengekstrak tabel invoice PDF vendor ke JSON terstruktur menggunakan Gemini Flash API dan validasi skema dasar, memangkas waktu input admin dari 3 jam menjadi 25 menit/hari.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_proj_2",
+          "source_section": "01 // COMBINED WORK, RESEARCH & BUILD LOG",
+          "quote": "Merancang prototipe chatbot rekomendasi karier mahasiswa berbasis RAG sederhana dan membandingkan akurasi jawaban antara prompt zero-shot vs few-shot pada 25 kasus uji.",
+          "is_quote_verified": true
+        },
+        {
+          "evidence_id": "ev_proj_3",
+          "source_section": "01 // COMBINED WORK, RESEARCH & BUILD LOG",
+          "quote": "Membantu pengumpulan dataset ulasan aplikasi publik dan pembersihan teks bahasa Indonesia (normalisasi slang & stopword) untuk eksperimen klasifikasi sentimen.",
+          "is_quote_verified": true
+        }
+      ],
+      "self_declared_limitations": [],
+      "extraction_notes": {
+        "missing_fields": [],
+        "layout_uncertainty": false,
+        "document_language": "id"
+      }
+    }
+  }
+}

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Screening Talenta AI — Sekolah Karir</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='4' fill='%230f172a'/><text y='65' x='50' font-size='50' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>SK</text></svg>">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="sk-header">
+    <a href="#" class="sk-brand">
+      <div class="sk-logo-box">SK</div>
+      <div class="sk-brand-text">
+        <h1>Sekolah Karir</h1>
+        <p>AI Talent Screening Workflow — Decision Support System</p>
+      </div>
+    </a>
+    <div class="sk-status-badge">
+      <span class="sk-status-dot"></span>
+      Engine: PyMuPDF + Gemini + Pydantic Validator
+    </div>
+  </header>
+
+  <!-- Workflow Step Navigation Bar -->
+  <nav class="sk-step-nav">
+    <button id="btn-step-setup" class="sk-step-btn active" onclick="switchStep('setup')">
+      <span class="sk-step-number">1</span>
+      Kriteria Lowongan PT (Owner Setup)
+    </button>
+    <button id="btn-step-eval" class="sk-step-btn" onclick="switchStep('eval')">
+      <span class="sk-step-number">2</span>
+      Upload CSV / CV & Otomasi Screening
+    </button>
+    <button id="btn-step-cohort" class="sk-step-btn" onclick="switchStep('cohort')">
+      <span class="sk-step-number">3</span>
+      Rekapitulasi Pelamar & Database CSV
+    </button>
+  </nav>
+
+  <!-- Main Container -->
+  <main class="sk-container">
+
+    <!-- ==========================================================================
+         STEP 1: OWNER / PT CRITERIA SETUP (Direct port of Notebook Cell 1)
+         ========================================================================== -->
+    <section id="step-setup" class="sk-step-content">
+      <div class="sk-panel-header">
+        <h2>Langkah 1: Konfigurasi Lowongan & Kriteria PT (Owner Setup)</h2>
+        <p>Form input perekrut untuk menentukan posisi, tanggung jawab, keahlian wajib, ambang batas, dan bobot 7 dimensi rubrik penilaian.</p>
+      </div>
+
+      <!-- Presets Toolbar -->
+      <div class="sk-card" style="padding: 0.875rem 1.25rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <strong style="font-size: 0.85rem; color: var(--sk-text-main);">Muat Preset Profil Posisi:</strong>
+            <span style="font-size: 0.775rem; color: var(--sk-text-muted); margin-left: 6px;">Simulasi pergantian kriteria Owner tanpa ubah kode engine.</span>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="sk-btn sk-btn-secondary sk-btn-sm" onclick="applyPreset('ai_engineer')">Preset: AI Engineer Intern (Default)</button>
+            <button class="sk-btn sk-btn-secondary sk-btn-sm" onclick="applyPreset('prompt_engineer')">Preset: Prompt Engineer Specialist</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Information Posisi -->
+      <div class="sk-card">
+        <h3 class="sk-card-title">Informasi Posisi & Kebutuhan Program</h3>
+        <p class="sk-card-desc">Parameter ini digunakan oleh prompt LLM untuk mengevaluasi keselarasan profil dan sinyal komitmen kandidat.</p>
+
+        <div class="sk-form-grid-4">
+          <div class="sk-form-group">
+            <label>Judul Posisi Lowongan:</label>
+            <input type="text" id="input-role-title" class="sk-input">
+          </div>
+          <div class="sk-form-group">
+            <label>Divisi / Unit Kerja:</label>
+            <input type="text" id="input-division" class="sk-input">
+          </div>
+          <div class="sk-form-group">
+            <label>Tipe Program:</label>
+            <input type="text" id="input-program-type" class="sk-input">
+          </div>
+          <div class="sk-form-group">
+            <label>Mode Kerja:</label>
+            <input type="text" id="input-work-mode" class="sk-input">
+          </div>
+        </div>
+
+        <div class="sk-form-grid-4">
+          <div class="sk-form-group">
+            <label>Durasi Program:</label>
+            <input type="text" id="input-duration" class="sk-input">
+          </div>
+          <div class="sk-form-group">
+            <label>Alokasi Waktu:</label>
+            <input type="text" id="input-weekly-hours" class="sk-input">
+          </div>
+          <div class="sk-form-group">
+            <label>Ambang Batas Strong Fit (%):</label>
+            <input type="number" id="input-th-strong" class="sk-input">
+          </div>
+          <div class="sk-form-group">
+            <label>Ambang Batas Partial Fit (%):</label>
+            <input type="number" id="input-th-partial" class="sk-input">
+          </div>
+        </div>
+
+        <div class="sk-form-group" style="margin-bottom: 1rem;">
+          <label>Deskripsi Pekerjaan (Job Description):</label>
+          <textarea id="input-job-desc" class="sk-textarea"></textarea>
+        </div>
+
+        <div class="sk-form-group" style="margin-bottom: 1rem;">
+          <label>Tanggung Jawab Utama (1 butir per baris):</label>
+          <textarea id="input-responsibilities" class="sk-textarea" style="min-height: 90px;"></textarea>
+        </div>
+
+        <div class="sk-form-grid-2">
+          <div class="sk-form-group">
+            <label>Keahlian Wajib (Required Skills — pisahkan dengan koma):</label>
+            <input type="text" id="input-required-skills" class="sk-input">
+          </div>
+          <div class="sk-form-group">
+            <label>Keahlian Pilihan (Preferred Skills — pisahkan dengan koma):</label>
+            <input type="text" id="input-preferred-skills" class="sk-input">
+          </div>
+        </div>
+      </div>
+
+      <!-- Rubrik Penilaian 7 Kriteria -->
+      <div class="sk-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
+          <div>
+            <h3 class="sk-card-title">7 Dimensi Rubrik Penilaian & Pembobotan</h3>
+            <p class="sk-card-desc" style="margin-bottom: 0;">
+              Penilaian berbasis bukti nyata. Skala: 0 = Tidak ada bukti, 1 = Klaim tanpa bukti, 2 = Terbukti di proyek nyata.
+            </p>
+          </div>
+          <div style="text-align: right;">
+            <span style="font-size: 0.8rem; font-weight: 600; color: var(--sk-text-muted);">Total Bobot:</span>
+            <span id="rubric-total-weight" style="font-size: 1.15rem; font-weight: 700; font-family: var(--font-mono); margin-left: 4px;">100%</span>
+          </div>
+        </div>
+
+        <div style="overflow-x: auto; margin-top: 0.75rem;">
+          <table class="sk-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Dimensi Kriteria</th>
+                <th style="width: 40%;">Fokus Evaluasi & Penilaian</th>
+                <th style="width: 25%;">Skala Jangkar Bukti</th>
+                <th style="width: 10%;">Bobot (%)</th>
+              </tr>
+            </thead>
+            <tbody id="rubric-weights-body">
+              <!-- Dynamically populated from JS -->
+            </tbody>
+          </table>
+        </div>
+
+        <div style="margin-top: 1.25rem; display: flex; justify-content: flex-end;">
+          <button class="sk-btn sk-btn-primary" onclick="saveAndApplyCriteria()">
+            Simpan & Terapkan Kriteria ke Pipeline Evaluasi
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         STEP 2: UPLOAD CSV / PDF & AUTOMATION SCREENING PIPELINE
+         ========================================================================== -->
+    <section id="step-eval" class="sk-step-content" style="display: none;">
+      <div class="sk-panel-header">
+        <h2>Langkah 2: Upload Berkas & Otomasi Screening AI</h2>
+        <p>Unggah file .csv batch pelamar atau berkas PDF/DOCX CV, lalu jalankan otomasi untuk ekstraksi entitas profil dan penilaian skor.</p>
+      </div>
+
+      <!-- Upload Mode Switcher -->
+      <div class="sk-upload-mode-bar">
+        <button id="btn-mode-csv" class="sk-mode-btn active" onclick="setUploadMode('csv')">
+          Opsi A: Upload Berkas CSV (Batch Screening)
+        </button>
+        <button id="btn-mode-pdf" class="sk-mode-btn" onclick="setUploadMode('pdf')">
+          Opsi B: Upload Dokumen CV (PDF / DOCX)
+        </button>
+      </div>
+
+      <!-- Upload Ingestion Card -->
+      <div class="sk-card">
+        <!-- Area Mode CSV -->
+        <div id="dropzone-csv-area">
+          <div class="sk-dropzone" onclick="document.getElementById('csv-upload-input').click()">
+            <input type="file" id="csv-upload-input" accept=".csv" style="display: none;" onchange="handleCsvUpload(event)">
+            <div class="sk-dropzone-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--sk-text-main); margin-bottom: 2px;">
+              Pilih File CSV Pelamar, atau Tarik ke Sini
+            </h4>
+            <p style="font-size: 0.8rem; color: var(--sk-text-muted);">
+              Mendukung file .csv batch data pelamar. Sistem membaca kolom dan mengevaluasi seluruh baris kandidat.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 0.75rem;">
+            <button class="sk-btn sk-btn-secondary sk-btn-sm" onclick="downloadCsvTemplate()">
+              Unduh Template CSV Pelamar
+            </button>
+            <button class="sk-btn sk-btn-secondary sk-btn-sm" onclick="loadSampleBatchCsv()">
+              Muat Sampel CSV Batch (5 Kandidat Batch 2)
+            </button>
+          </div>
+        </div>
+
+        <!-- Area Mode PDF -->
+        <div id="dropzone-pdf-area" style="display: none;">
+          <div class="sk-dropzone" onclick="document.getElementById('pdf-upload-input').click()">
+            <input type="file" id="pdf-upload-input" accept=".pdf,.docx" style="display: none;" onchange="handlePdfUpload(event)">
+            <div class="sk-dropzone-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            </div>
+            <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--sk-text-main); margin-bottom: 2px;">
+              Pilih Berkas CV (PDF / DOCX), atau Tarik ke Sini
+            </h4>
+            <p style="font-size: 0.8rem; color: var(--sk-text-muted);">
+              Dokumen diekstrak langsung di peramban menggunakan parser dokumen native.
+            </p>
+          </div>
+        </div>
+
+        <!-- Automation Trigger & Candidate Selector -->
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 0.5rem; padding-top: 0.75rem; border-top: 1px solid var(--sk-border-subtle);">
+          <div class="sk-candidate-pool" style="border-top: none; padding: 0;">
+            <span style="font-weight: 600; color: var(--sk-text-main);">Pilih Pelamar:</span>
+            <button id="btn-cand-Raka" class="sk-btn sk-btn-secondary sk-btn-sm btn-cand-select" onclick="selectCandidate('Raka')">Raka Pratama Wijaya</button>
+            <button id="btn-cand-Nadia" class="sk-btn sk-btn-secondary sk-btn-sm btn-cand-select" onclick="selectCandidate('Nadia')">Nadia Putri Kusuma</button>
+            <button id="btn-cand-Bima" class="sk-btn sk-btn-secondary sk-btn-sm btn-cand-select" onclick="selectCandidate('Bima')">Bima Aditya Saputra</button>
+            <button id="btn-cand-Kevin" class="sk-btn sk-btn-secondary sk-btn-sm btn-cand-select" onclick="selectCandidate('Kevin')">Kevin Reynaldi Santoso</button>
+            <button id="btn-cand-Farhan" class="sk-btn sk-btn-secondary sk-btn-sm btn-cand-select" onclick="selectCandidate('Farhan')">Farhan Rizky Alamsyah</button>
+          </div>
+
+          <button class="sk-btn sk-btn-accent" onclick="runAutomationPipeline()">
+            Jalankan Otomasi AI Screening
+          </button>
+        </div>
+      </div>
+
+      <!-- Automation Pipeline Progress Box (Animasi Visual Proses) -->
+      <div id="automation-progress-box" class="sk-automation-box">
+        <div class="sk-automation-header">
+          <strong style="font-size: 0.85rem; color: var(--sk-text-main);">Proses Otomasi AI Workflows Berjalan:</strong>
+          <span id="auto-progress-percent" style="font-size: 0.85rem; font-weight: 700; font-family: var(--font-mono); color: #16a34a;">0%</span>
+        </div>
+        <div class="sk-progress-track">
+          <div id="auto-progress-bar" class="sk-progress-bar"></div>
+        </div>
+        <div id="auto-log-box" class="sk-log-box"></div>
+      </div>
+
+      <!-- Results Section (Generated Output) -->
+      <div id="eval-result-section">
+
+        <!-- 1. KARTU OVERVIEW DATA EKSTRAKSI DOKUMEN (Nama, Univ, Exp, Project, Skills, Kontak) -->
+        <div class="sk-extracted-profile">
+          <div class="sk-profile-header">
+            <div>
+              <div style="font-size: 0.725rem; font-weight: 700; color: var(--sk-text-muted); text-transform: uppercase;">
+                Data Hasil Ekstraksi Berkas Dokumen (Entity Mapping)
+              </div>
+              <h3 id="prof-name" style="font-size: 1.25rem; font-weight: 700; color: var(--sk-text-main); margin-top: 2px;">
+                Nama Lengkap Kandidat
+              </h3>
+            </div>
+            <span class="sk-badge sk-badge-neutral">Ekstraksi Dokumen Terverifikasi</span>
+          </div>
+
+          <div class="sk-field-grid">
+            <div class="sk-field-item">
+              <span class="sk-field-label">Asal Universitas / Pendidikan:</span>
+              <span id="prof-univ" class="sk-field-value">-</span>
+            </div>
+            <div class="sk-field-item">
+              <span class="sk-field-label">Total Riwayat Pengalaman:</span>
+              <span id="prof-exp" class="sk-field-value">-</span>
+            </div>
+            <div class="sk-field-item">
+              <span class="sk-field-label">Kontak Email:</span>
+              <span id="prof-email" class="sk-field-value">-</span>
+            </div>
+            <div class="sk-field-item">
+              <span class="sk-field-label">Kontak Telepon:</span>
+              <span id="prof-phone" class="sk-field-value">-</span>
+            </div>
+            <div class="sk-field-item">
+              <span class="sk-field-label">Tautan Portofolio & Kode:</span>
+              <span id="prof-links" class="sk-field-value">-</span>
+            </div>
+            <div class="sk-field-item">
+              <span class="sk-field-label">Sinyal Ketersediaan & Waktu:</span>
+              <span id="prof-avail" class="sk-field-value">-</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 1rem;">
+            <span class="sk-field-label">Ringkasan Profil Kandidat:</span>
+            <p id="prof-summary" style="font-size: 0.825rem; color: var(--sk-text-body); margin-top: 3px; line-height: 1.5;">
+              -
+            </p>
+          </div>
+
+          <!-- Proyek Nyata Hasil Ekstraksi -->
+          <div style="margin-top: 1rem;">
+            <span class="sk-field-label">Proyek AI / Rekayasa Perangkat Lunak Relevan:</span>
+            <div class="sk-project-box">
+              <strong id="prof-proj-title" style="font-size: 0.875rem; color: var(--sk-text-main); display: block;">Judul Proyek</strong>
+              <div id="prof-proj-tech" style="font-size: 0.775rem; color: #1e40af; font-weight: 600; margin: 2px 0 4px;">Teknologi</div>
+              <p id="prof-proj-desc" style="font-size: 0.8rem; color: var(--sk-text-body);">Deskripsi proyek...</p>
+            </div>
+          </div>
+
+          <!-- Keahlian Terdeteksi -->
+          <div style="margin-top: 1rem;">
+            <span class="sk-field-label">Pemetaan Keahlian (Skills — Klaim vs Terverifikasi Bukti Proyek):</span>
+            <div id="prof-skills-container" class="sk-skills-tag-list">
+              <!-- Dynamically populated tags -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. KARTU HASIL EVALUASI OTOMASI AI & SKORING RUBRIK -->
+        <div class="sk-card">
+          <!-- Triage Header Banner -->
+          <div id="eval-summary-card" class="sk-eval-header strong">
+            <div>
+              <div style="font-size: 0.75rem; font-weight: 700; color: var(--sk-text-muted); text-transform: uppercase;">
+                Rekomendasi Tindakan Manusia (Human Decision Support)
+              </div>
+              <div id="eval-human-action" style="font-size: 0.95rem; font-weight: 600; color: var(--sk-text-main); margin-top: 2px;">
+                Prioritaskan untuk interview; tetap baca caveats sebelum memutuskan.
+              </div>
+              <div style="margin-top: 6px;">
+                <span id="eval-triage-badge" class="sk-badge sk-badge-strong">Strong Fit</span>
+              </div>
+            </div>
+            <div style="text-align: right;">
+              <div id="eval-readiness-val" class="sk-eval-score-num">92.5%</div>
+              <div style="font-size: 0.75rem; font-weight: 600; color: var(--sk-text-muted);">Skor Kesiapan (Readiness)</div>
+              <div id="eval-conf-val" style="font-size: 0.75rem; color: #166534; font-weight: 600; margin-top: 2px;">Confidence: 100.0% (High)</div>
+            </div>
+          </div>
+
+          <!-- 7 Rubric Breakdown Table -->
+          <h4 class="sk-section-title">Rincian Penilaian 7 Dimensi Rubrik (Skala Jangkar Bukti 0 / 1 / 2)</h4>
+          <div style="overflow-x: auto;">
+            <table class="sk-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">Kriteria Penilaian</th>
+                  <th style="width: 45%;">Bukti Temuan Dokumen & Catatan Evaluasi</th>
+                  <th style="width: 10%; text-align: center;">Skor (0-2)</th>
+                  <th style="width: 10%; text-align: center;">Bobot (%)</th>
+                  <th style="width: 10%; text-align: right;">Poin Nilai</th>
+                </tr>
+              </thead>
+              <tbody id="eval-rubric-table-body">
+                <!-- Dynamically populated from JS -->
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="3"><strong>Total Skor Kesiapan Akhir (Σ Skor/2 × Bobot)</strong></td>
+                  <td style="text-align: center;"><strong>100%</strong></td>
+                  <td id="eval-total-readiness-foot" style="text-align: right; font-family: var(--font-mono); font-size: 0.9rem;"><strong>92.5%</strong></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <!-- Verification & Caveats Grid -->
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1.25rem;">
+            <div>
+              <h4 class="sk-section-title" style="margin-top: 0;">Verifikasi Kutipan Bukti Dokumen Asli (Anti-Halusinasi)</h4>
+              <div id="eval-quotes-list">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+            <div>
+              <h4 class="sk-section-title" style="margin-top: 0;">Sinyal Risiko & Caveats (Aturan PRD)</h4>
+              <div id="eval-caveat-list">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Interview Probes -->
+          <h4 class="sk-section-title">Rekomendasi Pertanyaan Wawancara Teknis (Interview Probes)</h4>
+          <div id="eval-probe-list">
+            <!-- Dynamically populated -->
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================================================
+         STEP 3: REKAPITULASI PELAMAR & DATABASE CSV
+         ========================================================================== -->
+    <section id="step-cohort" class="sk-step-content" style="display: none;">
+      <div class="sk-panel-header">
+        <h2>Langkah 3: Rekapitulasi Pelamar & Database Hasil Screening</h2>
+        <p>Ringkasan kohor kandidat, status triase rekomendasi tindakan manusia, dan ekspor data ke format CSV 24 kolom.</p>
+      </div>
+
+      <!-- Cohort Stat Cards -->
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 1.25rem;">
+        <div class="sk-card" style="margin-bottom: 0; padding: 1rem;">
+          <div style="font-size: 0.725rem; font-weight: 600; color: var(--sk-text-muted); text-transform: uppercase;">Total Pelamar</div>
+          <div id="stat-total-cands" style="font-size: 1.6rem; font-weight: 700; color: var(--sk-text-main); margin-top: 2px;">5</div>
+          <div style="font-size: 0.75rem; color: var(--sk-text-muted);">Batch 2 AI Engineer</div>
+        </div>
+        <div class="sk-card" style="margin-bottom: 0; padding: 1rem;">
+          <div style="font-size: 0.725rem; font-weight: 600; color: var(--sk-text-muted); text-transform: uppercase;">Strong Fit</div>
+          <div id="stat-strong-cands" style="font-size: 1.6rem; font-weight: 700; color: #166534; margin-top: 2px;">3</div>
+          <div style="font-size: 0.75rem; color: var(--sk-text-muted);">Prioritas Wawancara</div>
+        </div>
+        <div class="sk-card" style="margin-bottom: 0; padding: 1rem;">
+          <div style="font-size: 0.725rem; font-weight: 600; color: var(--sk-text-muted); text-transform: uppercase;">Partial Fit</div>
+          <div id="stat-partial-cands" style="font-size: 1.6rem; font-weight: 700; color: #854d0e; margin-top: 2px;">1</div>
+          <div style="font-size: 0.75rem; color: var(--sk-text-muted);">Interview Konfirmasi</div>
+        </div>
+        <div class="sk-card" style="margin-bottom: 0; padding: 1rem;">
+          <div style="font-size: 0.725rem; font-weight: 600; color: var(--sk-text-muted); text-transform: uppercase;">Low Alignment</div>
+          <div id="stat-low-cands" style="font-size: 1.6rem; font-weight: 700; color: #475569; margin-top: 2px;">1</div>
+          <div style="font-size: 0.75rem; color: var(--sk-text-muted);">Needs Human Review</div>
+        </div>
+      </div>
+
+      <!-- Cohort Table Card -->
+      <div class="sk-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--sk-border-subtle);">
+          <div>
+            <h3 class="sk-card-title">Daftar Hasil Screening Pelamar</h3>
+            <p class="sk-card-desc" style="margin-bottom: 0;">Skor dihitung secara deterministik mengikuti pembobotan kriteria di Langkah 1.</p>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button class="sk-btn sk-btn-secondary sk-btn-sm" onclick="exportCSV()">Unduh CSV (24 Kolom Lengkap)</button>
+            <button class="sk-btn sk-btn-secondary sk-btn-sm" onclick="exportJSON()">Unduh JSON</button>
+          </div>
+        </div>
+
+        <div style="overflow-x: auto;">
+          <table class="sk-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">Nama Pelamar</th>
+                <th style="width: 25%;">Asal Universitas / Pendidikan</th>
+                <th style="width: 12%;">Skor Kesiapan</th>
+                <th style="width: 15%;">Confidence</th>
+                <th style="width: 13%;">Status Triase</th>
+                <th style="width: 10%;">Aksi</th>
+              </tr>
+            </thead>
+            <tbody id="cohort-table-body">
+              <!-- Dynamically populated from JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification -->
+  <div id="sk-toast" class="sk-toast">
+    <span id="toast-msg">Notifikasi</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
